@@ -1,7 +1,8 @@
+#initialization
 even_numbers = 0
 odd_numbers = 0
 to_input = int(input("how many numbers to input? "))
-
+#loop (changed by altering the to_input value)
 for i in range(to_input):
   number = str(input("enter a number: "))
   if int(number) % 2 == 0:
@@ -10,6 +11,7 @@ for i in range(to_input):
   if int(number) % 2 == 1:
     print(number + " is an odd number")
     odd_numbers += 1
+#post loop events    
 print("done, you entered" )
 print(str(even_numbers) + " even numbers")
 print(str(odd_numbers) + " odd numbers")
